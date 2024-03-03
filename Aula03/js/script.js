@@ -50,31 +50,28 @@ function fazmult(){
     num2 = Number(nume.value)
     var mult = (num1*num2)
     console.log ('mult ', mult)
-    result.innerHTML = soma  
+    result.innerHTML = mult  
 }
 
-somar.addEventListener("click", fazsoma)
+somar.addEventListener("click", fazmult)
 
-function fazsoma(){
+function fazdivi(){
 
     num1 = Number(numer.value)
     num2 = Number(nume.value)
-    var soma = (num1+num2)
-    console.log ('soma ', soma)
-    result.innerHTML = soma  
+    var divi = (num1/num2)
+    console.log ('divi ', divi)
+    result.innerHTML = divi  
 }
 
 somar.addEventListener("click", fazsoma)
 
-function fazsoma(){
+function limp(){
+    result.innerHTML = " "
+    numero1.innerHTML = ' '
+    numero2.innerHTML = ' '
 
-    num1 = Number(numer.value)
-    num2 = Number(nume.value)
-    var soma = (num1+num2)
-    console.log ('soma ', soma)
-    result.innerHTML = soma  
 }
 
-somar.addEventListener("click", fazsoma)
 
 
