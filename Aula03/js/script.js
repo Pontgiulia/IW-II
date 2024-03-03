@@ -44,12 +44,12 @@ function fazsubtracao(){
 
 somar.addEventListener("click", fazsubtracao)
 
-function fazsoma(){
+function fazmult(){
 
     num1 = Number(numer.value)
     num2 = Number(nume.value)
-    var soma = (num1+num2)
-    console.log ('soma ', soma)
+    var mult = (num1*num2)
+    console.log ('mult ', mult)
     result.innerHTML = soma  
 }
 
