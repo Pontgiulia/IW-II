@@ -8,16 +8,31 @@
     <title>Calculadora de imc</title>
 </head>
 <body>
-    <h1>Calculadora de IMC</h1>
-    Informe sua altura:
-    <input id="altu" name="altu" value="" type="number">
-    Informe seu peso:
-    <input id="pes" name="peso" value="" type="number">
-    Informe seu sexo:
-    <select>
-        <option id="masc" name="masc" value="" type="text">Masculino</option>
-        <option id="fem" name="fem" value="" type="text">Feminino</option>
-    </select>
+    <section class="calculadora">
+        <h1>Calculadora IMC - Índice de Massa Corpórea </h1>
+    
+            <p>Digite seu peso: </p>
+            <input id="peso" name="peso" value="" type="float">
+
+            <p>Digite sua altura: </p>
+            <input id="altura" name="altura" value="" type="float">
+
+            <p>Informe seu gênero: </p>
+            <select name="sexo" id="sexo">
+                <option id="" value="">SELECIONE</option>
+                <option id="fem" value="fem">FEMININO</option>
+                <option id="masc" value="masc">MASCULINO</option>
+            </select>
+
+            <p><button id="calcular" onclick="calcular()">CALCULAR</button></p>
+
+            <p id="res">O seu IMC é de: <span id = "resultIMC"> </span></p>
+            <p id="res">Diagnóstico: <span id = "diagValor">  </span></p>
+            <button id="limpa" onclick="limpa()">NOVO CÁLCULO</button>
+    </section>
+
+    
+    
     <script src="js/script.js"></script>
 </body>
 </html>
