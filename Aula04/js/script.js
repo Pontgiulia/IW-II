@@ -13,7 +13,6 @@ function diag(calcular){
     if(sexo == 'masc'){
         if (calcular<20){
             diagValor.innerHTML = 'Abaixo do peso'
-            // img.src = 'img/IMC6.png'
         }
         else if(calcular >= 20 && calcular<25){
             diagValor.innerHTML = 'Normal'
@@ -34,7 +33,6 @@ function diag(calcular){
     else if(sexo == 'fem'){
         if (calcular<19){
             diagValor.innerHTML = 'Abaixo do peso'
-            img = img.setAttribute('src','imc1.png')
         }
         else if(calcular >= 19 && calcular<24){
             diagValor.innerHTML = 'Normal'

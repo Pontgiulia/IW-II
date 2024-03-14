@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+</head>
+<body>
+    <button id="b" onclick="compra()">Comprar produto</button>
+    <p id="result"></p>
+    <p id="vald"></p>
+    <p id="valt"></p>
+    <script>
+    function compra(){
+        var aq = prompt("Digite o nome do produto: ")
+        var pre = prompt("Digite o preço do produto: ")
+        var dado = prompt("Informe o valor dado: ")
+        var troc = dado-pre
+
+        document.getElementById("result").innerHTML="Você irá comprar um(a) " +aq+ " com o preço de " +pre+ " reais"
+        document.getElementById("vald").innerHTML="Você pagou " +dado+ " reais"
+        document.getElementById("valt").innerHTML="Seu troco será de " +troc+ " reais"
+
+        if(dado<=pre){
+            valt.innerHTML = 'Você não tem troco para receber' 
+        }
+            else{
+                valt.innerHTML = 'Seu troco será de'  +troc+  ' reais'
+        }
+    }
+    </script>
+</body>
+</html>
