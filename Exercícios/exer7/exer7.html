@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar com troco</title>
+</head>
+<body>
+    <button id="b" onclick="compra()">Comprar produto</button>
+    <p id="nome"></p>
+    <p id="sala"></p>
+    <p id="salare"></p>
+    <script>
+    function compra(){
+        var name = prompt("Digite o nome do funcionário: ")
+        var salO = prompt("Digite o salário do funcionário: ")
+        var Prc = prompt("Informe o reajuste em porcentagem: ")
+        var sal
+
+        document.getElementById("Nome").innerHTML="O funcionário que terá o salário reajustado é o(a): " +name+ ""
+        document.getElementById("sala").innerHTML= +name+ "recebe originalmente " +salO+ ""
+        document.getElementById("salare").innerHTML="Seu troco será de " +sal+ " reais"
+    }
+    </script>
+</body>
+</html>
