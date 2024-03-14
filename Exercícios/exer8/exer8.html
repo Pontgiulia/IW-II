@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskara</title>
+</head>
+<body>
+  <h1>Resolvendo bhaskara</h1>
+  <button onclick="formula()">Calcular fórmula de bhaskara</button>
+  <p>A fórmula de bhaskara é: <strong>ax²+bx+c=0</strong></p>      
+  <p>aperte o botão acima para calcular a fórmula de bhaskara</p>
+  <p id="resultdel"> Resultado do delta </p>
+  <p id="resultra1"> Resultado da primeira raiz </p>
+  <p id="resultra2"> Resultado da segunda raiz </p>
+  
+      <script>
+        function formula(){
+            var a = Number(prompt("Digite o valor de a: "))
+            var b = Number(prompt("Digite o valor de b: "))
+            var c = Number(prompt("Digite o valor de c: "))   
+             
+            var delta = (b^2-4*a*c)
+             resultdel.innerhtml = "O valor de delta é " +delta
+            var ra1 = (-b+ Math.sqrt(delta))/(2*a)
+             resultra1.innerhtml = "O valor da primeira raiz (+ delta) é " +ra1
+            var ra2 = (-b- Math.sqrt(delta))/(2*a)
+             resultra2.innerhtml = "O valor da segunda raiz (- delta) é" +ra2
+          }
+      </script>
+</body>
+</html>
