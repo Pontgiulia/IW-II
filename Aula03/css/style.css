@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to bottom right, cornflowerblue, lightblue);
+    background-color:  lightblue;
     color: rgb(9, 20, 41);
     text-shadow: 1px 1px 3px goldenrod;
 }
