@@ -17,8 +17,8 @@ const limpar = document.getElementById('lim')
 
 const result = document.getElementById('result')
 
-const numer = document.getElementById('prim')
-const nume = document.getElementById('segn')
+var numer = document.getElementById('prim')
+var nume = document.getElementById('segn')
 var num1 = 0
 var num2 = 0
 
@@ -42,7 +42,7 @@ function fazsubtracao(){
     result.innerHTML = subtr  
 }
 
-somar.addEventListener("click", fazsubtracao)
+subtracao.addEventListener("click", fazsubtracao)
 
 function fazmult(){
 
@@ -53,7 +53,7 @@ function fazmult(){
     result.innerHTML = mult  
 }
 
-somar.addEventListener("click", fazmult)
+multiplicacao.addEventListener("click", fazmult)
 
 function fazdivi(){
 
@@ -64,14 +64,16 @@ function fazdivi(){
     result.innerHTML = divi  
 }
 
-somar.addEventListener("click", fazsoma)
+divisao.addEventListener("click", fazdivi)
 
 function limp(){
     result.innerHTML = " "
-    numero1.innerHTML = ' '
-    numero2.innerHTML = ' '
+    nume.value = ""
+    numer.value = ""
 
 }
+
+limpar.addEventListener("click", limp)
 
 
 
