@@ -2,9 +2,6 @@ body{
     background-image: linear-gradient(to bottom right, cornflowerblue, lightblue);
     color: rgb(9, 20, 41);
     text-shadow: 1px 1px 3px goldenrod;
-    border-radius: 5px;
-    border-color: goldenrod;
-    border-style: dotted;
 }
 
 div{
@@ -12,6 +9,7 @@ div{
     border-radius: 5px;
     border-color: goldenrod;
     border-style: dotted;
+    align-content: center;
 }
 
 button{
