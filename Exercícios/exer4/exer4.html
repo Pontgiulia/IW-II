@@ -8,21 +8,25 @@
     <title>Interagindo com o usuário</title>
 </head>
 <body>
-    <h1 id="a">Bem vindo</h1>
+    <h1 id="a">Escolha a cor</h1>
     <button id="az" onclick="azul()">Azul</button>
     <button id="li" onclick="lila()">Roxo</button>
     <button id="am" onclick="amar()">Amarelo</button>
+    <p id="ata">Bem vindo</p>
     
 
     <script>
     function azul(){
     document.getElementById("a").style.color="blue"
+    document.getElementById("ata").innerHTML="Você apertou o botão 1"
     }
     function lila(){
     document.getElementById("a").style.color="purple"
+    document.getElementById("ata").innerHTML="Você apertou o botão 2"
     }
     function amar(){
     document.getElementById("a").style.color="yellow"
+    document.getElementById("ata").innerHTML="Você apertou o botão 3"
     }
     </script>
 </body>
