@@ -1,61 +1,47 @@
 const ligar = document.getElementById('ligar')
 const desligar = document.getElementById('desligar')
+const lampada = document.getElementById('lamp')
 const restaurar = document.getElementById('restaurar')
 
-const lampada = document.getElementById('lamp')
+function estaQuebrada(){
 
-//------------------------------------------------------
+    return lampada.src.indexOf('quebrada') > -1
 
-
-//se estiver quebrada
-function quebrada(){
-    return lampada.src.indexOf('quebrada') > -1 
-    //retorna true ou false
 }
 
-//lampada ligada
-function lamplig(){ 
-    if (!quebrada()){
-        lampada.src = "img/ligada.jpg"
+function lampLigada(){
+
+    if (!estaQuebrada()){
+    lampada.src = "img/ligada.jpg"
     }
+
 }
 
-ligar.addEventListener('click', lamplig)
+function lampDesligada(){
 
-//lampada desligada
-function lampdes(){
-    if (!quebrada()){
-        lampada.src = "img/desligada.jpg"
-    }
-}
-
-desligar.addEventListener('click', lampdes)
-
-//quando o mouse passar por cima a lampada vai ligar ou desligar
-//lampada.addEventListener('mouseover', lamplig)
-//lampada.addEventListener('mouseleave', lampdes)
-
-//Lampada quebrada
-function lampque(){
-    lampada.src = "img/quebrada.jpg"
-}
-
-lampada.addEventListener('dblclick', lampque)
-
-
-//Lampada restaurada
-function lamprest(){
+    if(!estaQuebrada()){
     lampada.src = "img/desligada.jpg"
+    }
+
 }
 
-restaurar.addEventListener('click', lamprest)
+function lampQuebrada(){
 
+    lampada.src = "img/quebrada.jpg"
 
-
-let a = 10;
-
-{
-    let a = 2;
 }
-a = 3;
-console.log(a);
+
+function lampRestaura(){
+
+    lampada.src = "img/desligada.jpg"
+
+}
+
+ligar.addEventListener('click', lampLig)
+desligar.addEventListener('click', lampDes)
+restaurar.addEventListener('click', lampRest )
+
+lampada.addEventListener('mouseover', lampLig)
+lampada.addEventListener('mouseleave',lampDes)
+
+lampada.addEventListener('dblclick', lampQuebr)
