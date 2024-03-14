@@ -2,10 +2,12 @@ const ligar = document.getElementById('ligar')
 const desligar = document.getElementById('desligar')
 const lampada = document.getElementById('lamp')
 const restaurar = document.getElementById('restaurar')
+// const quebrar = document.getElementById('quebrar')
 
 function estaQuebrada(){
 
     return lampada.src.indexOf('quebrada') > -1
+    // isso retorna true or false
 
 }
 
@@ -37,11 +39,12 @@ function lampRestaura(){
 
 }
 
-ligar.addEventListener('click', lampLig)
-desligar.addEventListener('click', lampDes)
-restaurar.addEventListener('click', lampRest )
+ligar.addEventListener('click', lampLigada)
+desligar.addEventListener('click', lampDesligada)
+restaurar.addEventListener('click', lampRestaura )
+// quebrar.addEventListener('click', lampquebrada)
 
-lampada.addEventListener('mouseover', lampLig)
-lampada.addEventListener('mouseleave',lampDes)
+lampada.addEventListener('mouseover', lampLigada)
+lampada.addEventListener('mouseleave',lampDesligada)
 
-lampada.addEventListener('dblclick', lampQuebr)
+lampada.addEventListener('dblclick', lampQuebrada)
