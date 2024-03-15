@@ -7,18 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Khand:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Calculadora de imc</title>
 </head>
 <body>
+    <h1>Calculadora IMC - Índice de Massa Corpórea </h1>
     <section class="calculadora">
-        <h1>Calculadora IMC - Índice de Massa Corpórea </h1>
+        <img src="Pessoas.png">
     
-            <p>Digite seu peso: </p>
-            <input id="peso" name="peso" value="" type="float">
-
             <p>Digite sua altura: </p>
             <input id="altura" name="altura" value="" type="float">
+
+            <p>Digite seu peso: </p>
+            <input id="peso" name="peso" value="" type="float">
 
             <p>Informe seu gênero: </p>
             <select name="sexo" id="sexo">
@@ -26,14 +30,16 @@
                 <option id="fem" value="fem">FEMININO</option>
                 <option id="masc" value="masc">MASCULINO</option>
             </select>
-
+            
             <p><button id="calcular" onclick="calcular()">CALCULAR</button></p>
 
             <p id="res">O seu IMC é de: <span id = "resultIMC"> </span></p>
             <p id="res">Diagnóstico: <span id = "diagValor">  </span></p>
             <button id="limpa" onclick="limpa()">NOVO CÁLCULO</button>
     </section>
-
+    <secton>
+        <h3>Lembre-se, é sempre recomendado a procura de um médico especialista quando existe alguma dúvida sobre sua saúde!</h3>
+    </secton>
     
     
     <script src="js/script.js"></script>
