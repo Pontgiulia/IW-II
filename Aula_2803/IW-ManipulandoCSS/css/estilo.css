@@ -46,13 +46,31 @@ button {
 /* botao light */
 #btlight {
     background: #ededed;
-    color: #121212;
+    color: #b5b5b5;
 }
 
 /* botao dark */
 #btdark {
     background-color: #263238;
-    color: #fff;
+    color: #808080;
+}
+
+/*botao rosa*/
+#btpink {
+    background-color: rgb(231, 146, 191);
+    color: rgb(117, 73, 80);
+}
+
+/*botao blue*/
+#btblue {
+    background-color: #76b2d8;
+    color: #191970;
+}
+
+/*botao yellow*/
+#btyellow {
+    background-color: #f1e9a1;
+    color: #9e8a18;
 }
 
 /* articles com a class box */
@@ -64,26 +82,25 @@ button {
 /* Estilos para serem usados via JS */
 .light {
     background: #fff;
-    color: #191919;
+    color: #b5b5b5;
 }
 
 .dark {
     background: #222;
-    color: #fff;
+    color: #636363;
 }
 
-.azul {
-    background: #1a237e;
-    color: #fff;
+
+.pink{
+    background-color: pink;
+    color: rgb(122, 66, 75);
 }
 
-.escura {
-    background: #333;
-    color: #fff;
-    border-radius: 5px;
-    padding: 0.625rem;
+.blue{
+    background-color: #87CEFA;
+    color: #191970;
 }
-.amarelo {
-    background: #ffc107;
-    color: #fff;
+.yellow{
+    background-color: #FFFACD;
+    color: #FFD700;
 }
