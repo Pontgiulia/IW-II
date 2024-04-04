@@ -10,14 +10,13 @@
 body {
     width: 100vw;
     height: 100vh;
-    background: #ccc;
+
 }
 
 main {
     min-width: 960px;
     min-height: 100vh;
     margin: 0 auto;
-    background: #fff;
     padding: 2rem;
 }
 
@@ -47,30 +46,45 @@ button {
 #btlight {
     background: #ededed;
     color: #b5b5b5;
+    background-image: url(../img/flor.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /* botao dark */
 #btdark {
     background-color: #263238;
     color: #808080;
+    background-image: url(../img/florpreta.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /*botao rosa*/
 #btpink {
     background-color: rgb(231, 146, 191);
     color: rgb(117, 73, 80);
+    background-image: url(../img/florRosa.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /*botao blue*/
 #btblue {
     background-color: #76b2d8;
     color: #191970;
+    background-image: url(../img/flores_azuis.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /*botao yellow*/
 #btyellow {
     background-color: #f1e9a1;
     color: #9e8a18;
+    background-image: url(../img/floramarela.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 /* articles com a class box */
@@ -83,6 +97,7 @@ button {
 .light {
     background: #fff;
     color: #b5b5b5;
+    
 }
 
 .dark {
@@ -94,13 +109,17 @@ button {
 .pink{
     background-color: pink;
     color: rgb(122, 66, 75);
+    
 }
 
 .blue{
     background-color: #87CEFA;
     color: #191970;
+    
 }
+
 .yellow{
     background-color: #FFFACD;
     color: #FFD700;
+    
 }
