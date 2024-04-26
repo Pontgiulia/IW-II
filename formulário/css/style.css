@@ -1,0 +1,39 @@
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-image: url(../img/nobe.jpg);
+    background-repeat: no-repeat;
+    background-size: 102%;
+    margin: 3%;
+    text-align: center;
+}
+
+h1{
+    font-family: Montserrat;
+    font-size: 3em;
+    padding-bottom: 1%;
+    text-shadow: 5px 6px 10px #FFD700;
+    font-weight: bold;
+    color: #ffffff;
+}
+p{
+    font-family:Montserrat;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.row, input{
+    background-color: #FFD700;
+    border-color: #b19600;
+    padding: 0.7%;
+    margin: auto;
+    margin-top: 1%;
+    font-family:Montserrat;
+    color: #ffffff;
+}
+
+#enviar{
+    background-color: #FFD700;
+    background-image: url(../img/pikachu\ collage!!\ \(please\ comment\ collage\ requests!\).jpg);
+    border-color: #b19600;
+}
