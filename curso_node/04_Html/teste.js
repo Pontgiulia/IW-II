@@ -1,7 +1,11 @@
-const Sequileze = require('sequileze')
-const Sequileze = new Sequileze('test','root','',{
+const Sequileze = require('sequelize')
+const sequileze = new Sequileze('test','root','',{
     host:'localhost',
     dialect:'mysql'
 })
 
-sequileze.authebticate()
+sequileze.authenticate().then(function(){
+    console.log('Tudo funcionando (:')
+}).catch(function(erro){
+    console.log('Não tá funcionando porque: ' + erro)
+})
