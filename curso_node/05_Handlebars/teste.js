@@ -39,5 +39,5 @@ const Usuario = sequileze.define('usuarios',{
 
 // Postagem.create({
 //     titulo: 'Winxs',
-//     conteudo: 'Sei que você vai querer ser uma de nós! Winx, Quando damos nossas mãos, Nos tornamos poderosas, Porque juntas somos invencíveis'
+//     conteudo: 'Sei que você vai querer ser uma de nós! Winx, Quando damos nossas mãos nos tornamos poderosas, porque juntas somos invencíveis'
 // })
