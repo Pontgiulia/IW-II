@@ -19,6 +19,10 @@ app.get('/cadastro', function(req,res){
     res.render('Formulario')
 })
 
+app.post('/add', function(req,res){
+    res.send('Formulario recebido')
+})
+
 
 app.listen(8081, function(){
     console.log('Servidor rodando em http://localhost:8081')
